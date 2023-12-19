@@ -15,7 +15,7 @@ async function getImageUrl(city) {
   }
 // Функция для обновления данных на карточке
 async function updateCard(cityData, cardElement) {
-  // Обновите данные на карточке, используя переданный объект cityData
+  // Обновление данных на карточке, используя переданный объект cityData
   const imageUrl = await getImageUrl(cityData.name);
   const weatherData = await getWeatherData(cityData.name);
 
